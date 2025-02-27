@@ -1,0 +1,80 @@
+/* Grid container setup */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr; /* 3 equal columns */
+    grid-template-rows: 1fr 1fr; /* 2 rows */
+    gap: 20px; /* Optional gap between the grid items */
+    align-items: center; /* Vertically centers the content in each grid item */
+    justify-items: center; /* Horizontally centers content in each grid item */
+    background-color: steelblue;
+
+}
+
+.grid-header{
+    font-size: 4rem;
+    margin-bottom: 170px;
+}
+
+.grid-item.carousel{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    width: 100%;
+    padding-bottom: 75px;
+    margin-top: -100px;
+}
+
+.carousel-inner{
+    height: 400px;
+}
+
+.carousel-item.active img{
+    border: solid;
+    max-height: 400px;
+}
+
+.left-logos{
+    display: flex;
+    height: 100%;
+    grid-row: span 2;
+    flex-direction: column;
+    margin-right: 100px;
+    justify-content: center;
+}
+
+
+.left-logos img, .right-logos img {
+    height: auto;
+    width: 150px;
+    margin-bottom: 100px;
+    
+}
+
+.right-logos{
+    display: flex;
+    height: 100%;
+    grid-row: span 2;
+    flex-direction: column;
+    margin-left: 100px;
+    justify-content: center;
+}
+
+.card-1{
+    color: black;
+}
+
+.card-2{
+    color: white;
+}
+
+.card {
+    aspect-ratio: 1 / 1;
+    width: 75%;
+    border-radius: 1rem; /* Keeps the rounded corners */
+}
+
+
+.card-link {
+    text-decoration: none;  /* Removes the underline */
+    color: inherit;         /* Keeps the text color from the parent element */
+  }
+  
